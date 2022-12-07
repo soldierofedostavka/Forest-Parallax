@@ -12,7 +12,6 @@ body {
 }
 
 :root {
-  --scrollTop: 10px;
 }
 
 @font-face {
@@ -26,7 +25,7 @@ body {
   font-weight: 900;
 }
 
-.header {
+.main-header {
   position: relative;
 }
 
@@ -35,8 +34,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   text-align: center;
+
+  overflow: hidden;
 }
 
 .layer {
@@ -46,8 +48,17 @@ body {
 
   background-size: cover;
   background-position: center;
+
+  will-change: transform;
+	z-index: 2;
+}
+
+.layers__base {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+	z-index: 0;
 }
 
 .main-article {
   min-height: 100vh;
 }
+
