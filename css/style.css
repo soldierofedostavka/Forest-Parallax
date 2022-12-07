@@ -4,4 +4,50 @@
   box-sizing: border-box;
 }
 
-:root {}
+body {
+  background-color: #010101;
+  color: #fff;
+  font-family: raleway_f, sans-serif;
+  line-height: 1.55;
+}
+
+:root {
+  --scrollTop: 10px;
+}
+
+@font-face {
+  font-family: raleway_f;
+  src: url(../fonts/2Raleway-Regular.woff2);
+}
+
+@font-face {
+  font-family: raleway_f;
+  src: url(../fonts/2Raleway-Bold.woff2);
+  font-weight: 900;
+}
+
+.header {
+  position: relative;
+}
+
+.layers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.main-article {
+  min-height: 100vh;
+}
