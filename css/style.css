@@ -12,6 +12,7 @@ body {
 }
 
 :root {
+  --index: calc(1vh + 1vw);
 }
 
 @font-face {
@@ -29,6 +30,27 @@ body {
   position: relative;
 }
 
+.layers__header {
+  z-index: 1;
+  will-change: transform;
+
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #e7e7e0;
+  text-shadow: 0 0 15px #bec043;
+
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+}
+.layers__caption {
+  font-size: calc(var(--index) * 0.9);
+  letter-spacing: calc(var(--index) / 2.75);
+}
+.layers__title {
+  margin-bottom: calc(var(--index) * 1);
+  font-size: calc(var(--index) * 1.25);
+  letter-spacing: calc(var(--index) / 2);
+}
+
 .layers {
   height: 100vh;
   display: flex;
@@ -40,22 +62,26 @@ body {
 
   overflow: hidden;
 }
-
 .layer {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: 2;
 
   background-size: cover;
   background-position: center;
 
   will-change: transform;
-	z-index: 2;
 }
-
 .layers__base {
+  z-index: 0;
   transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
-	z-index: 0;
+}
+.layers__middle {
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+.layers__front {
+  transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
 }
 
 .main-article {
