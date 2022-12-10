@@ -42,12 +42,11 @@ body {
   bottom: calc(var(--index) * -4.5);
   z-index: 100;
 
-  background: url(../image/ground.png) center;
+  background: url(../image/ground.webp) center;
 }
 
 .layers__header {
   z-index: 1;
-  will-change: transform;
 
   text-transform: uppercase;
   font-weight: 900;
