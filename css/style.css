@@ -42,10 +42,7 @@ body {
   bottom: calc(var(--index) * -4.5);
   z-index: 100;
 
-  background-image: url(../image/ground.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../image/ground.png) center;
 }
 
 .layers__header {
