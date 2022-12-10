@@ -1,16 +1,9 @@
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: #010101;
-
-  color: var(--colorText);
-  text-shadow: 0 0 15px #bec043;
-  font-family: raleway_f, sans-serif;
-  line-height: 1.55;
 }
 
 :root {
@@ -27,6 +20,15 @@ body {
   font-family: raleway_f;
   src: url(../fonts/Raleway-Bold.woff2);
   font-weight: 900;
+}
+
+body {
+  background-color: #010101;
+
+  color: var(--colorText);
+  text-shadow: 0 0 15px #bec043;
+  font-family: raleway_f, sans-serif;
+  line-height: 1.55;
 }
 
 .main-header {

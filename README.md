@@ -1,2 +1,2 @@
 # Forest-Parallax
-Треним эффект параллакса
+Effect parallax
